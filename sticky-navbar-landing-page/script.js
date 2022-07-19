@@ -3,6 +3,17 @@ window.addEventListener('scroll', function () {
 	var header = document.querySelector('header')
 	header.classList.toggle('sticky', window.scrollY > 0)
 })
+//Mobile Menu
+const menuBtn = document.querySelector('.menu-btn')
+const mobileNav = document.querySelector('.mobile-nav')
+
+menuBtn.addEventListener('click', () => {
+	menuBtn.classList.toggle('open')
+	mobileNav.classList.toggle('open')
+})
+
+
+
 //Back to Top
 const backToTopButton = document.querySelector('#back-to-top-btn')
 
@@ -14,7 +25,7 @@ function scrollFunction() {
 		if (!backToTopButton.classList.contains('btnEntrance')) {
 			backToTopButton.classList.remove('btnExit')
 			backToTopButton.classList.add('btnEntrance')
-			backToTopButton.style.display = 'block'
+			backToTopButton.style.display = 'flex'
 		}
 	} else {
 		// Hide backToTopButton
