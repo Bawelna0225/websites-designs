@@ -135,6 +135,7 @@ nav {
 			background-color: #000;
 			svg {
 				fill: white;
+				 height: 32px;
 			}
 			&:hover {
 				width: 90px;
@@ -181,11 +182,12 @@ nav {
 	background-color: rgba(255, 255, 255, 0.394);
 	box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.4), 4px 4px 8px 0 rgba(0, 0, 0, 0.4), 4px 6px 8px 0 rgba(0, 0, 0, 0.4);
 }
-.mobile-nav{
+.mobile-nav {
 	display: none;
 }
 @media (max-width: 992px) {
 	header {
+		height: 80px;
 		padding: 20px !important;
 		.menu-btn {
 			width: 32px;
@@ -227,6 +229,7 @@ nav {
 		}
 		&.sticky {
 			padding: 15px;
+			height: 50px;
 		}
 		ul {
 			display: none;
@@ -258,6 +261,23 @@ nav {
 			transform: translateY(0%);
 		}
 	}
+nav {
+	width: 50px;
+	height: 10vh;
+	li {
+		height: 50px;
+		a {
+			svg {
+				fill: white;
+				height: 28px;
+			}
+			&:hover {
+				width: 70px;
+				border-radius: 0px 7px 7px 0px;
+			}
+		}
+	}
+}
 	.container {
 		padding: 20px 100px;
 	}
