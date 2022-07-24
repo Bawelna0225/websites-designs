@@ -149,7 +149,6 @@ header .mobile-nav.open li {
   top: 50%;
   transform: translateY(-50%);
   right: 0;
-  width: 80px;
 }
 .controls li {
   position: relative;
@@ -221,6 +220,9 @@ header .mobile-nav.open li {
 }
 
 @media screen and (max-width: 920px) {
+  header {
+    padding-inline: 20px;
+  }
   header .primary-nav {
     display: none;
   }
@@ -239,8 +241,25 @@ header .mobile-nav.open li {
     padding-left: 30px !important;
   }
 }
-@media screen and (max-width: 920px) {
-  header {
-    padding-inline: 20px;
+@media screen and (max-width: 420px) {
+  .controls li {
+    width: 60px;
+    height: 60px;
+  }
+  .controls li::before {
+    width: 15px;
+    height: 15px;
+  }
+  .contentBx div h2 {
+    color: #fff;
+    font-size: 1em;
+  }
+  .contentBx div p {
+    color: #fff;
+    font-size: 0.9em;
+  }
+  .contentBx div a {
+    font-size: 1rem;
+    padding: 7px 22px;
   }
 }/*# sourceMappingURL=style.css.map */

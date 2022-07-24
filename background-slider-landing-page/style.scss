@@ -95,7 +95,7 @@ header {
 			flex-direction: column;
 			list-style-type: none;
 			li {
-                transition: 300ms linear;
+				transition: 300ms linear;
 				position: relative;
 				margin-left: 40px;
 				font-size: 1.5em;
@@ -147,7 +147,7 @@ header {
 	top: 50%;
 	transform: translateY(-50%);
 	right: 0;
-	width: 80px;
+
 	li {
 		position: relative;
 		width: 80px;
@@ -219,6 +219,7 @@ header {
 
 @media screen and (max-width: 920px) {
 	header {
+		padding-inline: 20px;
 		.primary-nav {
 			display: none;
 		}
@@ -240,8 +241,29 @@ header {
 		}
 	}
 }
-@media screen and (max-width: 920px) {
-	header {
-		padding-inline: 20px;
+@media screen and (max-width: 420px) {
+	.controls li {
+		width: 60px;
+		height: 60px;
+		&::before {
+			width: 15px;
+			height: 15px;
+		}
+	}
+	.contentBx {
+		div {
+			h2 {
+				color: #fff;
+				font-size: 1em;
+			}
+			p {
+				color: #fff;
+				font-size: 0.9em;
+			}
+			a {
+				font-size: 1rem;
+				padding: 7px 22px;
+			}
+		}
 	}
 }
