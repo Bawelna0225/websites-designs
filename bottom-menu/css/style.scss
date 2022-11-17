@@ -12,3 +12,38 @@ body {
 	padding-block: 80px;
 	padding-inline: 20px;
 }
+.nav {
+	top: 0;
+	position: fixed;
+	height: 70px;
+	width: 100vw;
+	background-color: rgba(30, 30, 30, 1);
+	& > ul {
+		position: relative;
+		width: 100vw;
+		height: 100%;
+		display: flex;
+		justify-content: start;
+		list-style-type: none;
+		overflow: auto;
+		li {
+			height: 100%;
+			display: flex;
+			padding: 10px;
+			text-align: center;
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.3);
+			}
+			a {
+				text-decoration: none;
+				color: #fff;
+				height: 100%;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+	
+}
