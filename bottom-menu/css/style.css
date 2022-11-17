@@ -4,4 +4,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+.main {
+  padding-block: 80px;
+  padding-inline: 20px;
 }/*# sourceMappingURL=style.css.map */
