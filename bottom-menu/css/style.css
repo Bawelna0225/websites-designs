@@ -48,4 +48,51 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.nav .menu {
+  position: absolute;
+  overflow: auto;
+  bottom: auto;
+  top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  translate: 0% 0%;
+  opacity: 0;
+  transition: 300ms translate linear, 100ms opacity linear;
+  visibility: hidden;
+}
+.nav .menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+.nav .menu > ul {
+  padding: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+  list-style-type: none;
+  bottom: 80px;
+  color: white;
+  width: 100vw;
+  left: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -ms-scroll-chaining: none;
+      overscroll-behavior: contain;
+}
+.nav .menu > ul li {
+  padding: 20px;
+  text-align: center;
+}
+.nav .menu > ul li:hover {
+  background-color: rgba(88, 87, 87, 0.3);
+}
+.nav .menu > ul li a {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
