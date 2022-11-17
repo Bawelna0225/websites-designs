@@ -95,4 +95,29 @@ body {
 .nav .menu > ul li a {
   text-decoration: none;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    top: auto;
+    bottom: 0;
+  }
+  .nav > ul li {
+    font-size: 0.75rem;
+  }
+  .nav .menu {
+    bottom: 70px;
+    top: auto;
+  }
+  .nav .menu > ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .nav .menu > ul li {
+    width: 100%;
+    border-bottom: 1px solid rgba(232, 232, 232, 0.4);
+    padding: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

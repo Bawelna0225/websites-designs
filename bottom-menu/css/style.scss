@@ -75,7 +75,7 @@ body {
 			display: grid;
 			justify-content: center;
 			align-items: center;
-			grid-template-columns: repeat(auto-fit, minmax(400px ,1fr));
+			grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 			overscroll-behavior: contain;
 			li {
 				padding: 20px;
@@ -86,6 +86,30 @@ body {
 				a {
 					text-decoration: none;
 					color: white;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.nav {
+		top: auto;
+		bottom: 0;
+		& > ul li {
+			font-size: 0.75rem;
+		}
+		.menu {
+			bottom: 70px;
+			top: auto;
+			& > ul {
+				display: flex;
+				justify-content: start;
+				align-items: center;
+				flex-direction: column;
+				li {
+					width: 100%;
+					border-bottom: 1px solid rgba(232, 232, 232, 0.4);
+					padding: 15px;
 				}
 			}
 		}
