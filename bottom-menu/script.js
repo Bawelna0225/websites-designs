@@ -1,5 +1,4 @@
 const openMenuButtons = [...document.querySelectorAll('.open-menu')]
-console.log(openMenuButtons);
 
 openMenuButtons.forEach((btn) => {
 	btn.addEventListener('click', (e) => {
