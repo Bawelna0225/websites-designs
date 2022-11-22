@@ -81,6 +81,7 @@ header {
 	}
 	.menu {
 		position: absolute;
+		left: 0;
 		overflow: auto;
 		bottom: auto;
 		top: 70px;
@@ -105,14 +106,13 @@ header {
 			list-style-type: none;
 			bottom: 80px;
 			color: white;
-			// width: 100%;
+			width: 100vw;
 			left: 0;
 			display: grid;
 			justify-content: center;
 			align-items: center;
 			grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 			overscroll-behavior: contain;
-			border-right: 3px solid red;
 			li {
 				padding: 20px;
 				text-align: center;
