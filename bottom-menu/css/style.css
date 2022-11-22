@@ -85,6 +85,7 @@ header .other-links ul li a {
   bottom: auto;
   top: 70px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: start;
   background-color: rgba(0, 0, 0, 0.9);
@@ -99,7 +100,21 @@ header .other-links ul li a {
   opacity: 1;
   visibility: visible;
 }
-.nav .menu > ul {
+.nav .menu .close-btn {
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.nav .menu .lists {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  transition: 300ms translate linear, 100ms opacity linear;
+}
+.nav .menu .lists > ul {
+  margin: 0 auto;
   padding: 10px;
   max-height: 400px;
   overflow-y: auto;
@@ -107,6 +122,7 @@ header .other-links ul li a {
   bottom: 80px;
   color: white;
   width: 100vw;
+  overflow-x: hidden;
   left: 0;
   display: grid;
   justify-content: center;
@@ -115,14 +131,14 @@ header .other-links ul li a {
   -ms-scroll-chaining: none;
       overscroll-behavior: contain;
 }
-.nav .menu > ul li {
+.nav .menu .lists > ul li {
   padding: 20px;
   text-align: center;
 }
-.nav .menu > ul li:hover {
+.nav .menu .lists > ul li:hover {
   background-color: rgba(88, 87, 87, 0.3);
 }
-.nav .menu > ul li a {
+.nav .menu .lists > ul li a {
   text-decoration: none;
   color: white;
 }
