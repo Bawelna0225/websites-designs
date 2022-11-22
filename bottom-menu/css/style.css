@@ -141,10 +141,13 @@ header .other-links ul li a {
 }
 .nav .menu .close-btn {
   color: var(--text-color);
-  margin: 10px;
+  margin: 10px 20px;
   padding: 10px;
   border: 1px solid var(--text-color);
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav .menu .lists {
   display: flex;
@@ -210,7 +213,7 @@ header .other-links ul li a {
     font-size: 0.75rem;
   }
   .nav .menu {
-    bottom: 70px;
+    bottom: 60px;
     top: auto;
   }
   .nav .menu > ul {

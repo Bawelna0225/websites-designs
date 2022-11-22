@@ -137,10 +137,13 @@ header {
 		}
 		.close-btn {
 			color: var(--text-color);
-			margin: 10px;
+			margin: 10px 20px;
 			padding: 10px;
 			border: 1px solid var(--text-color);
 			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 		.lists {
 			display: flex;
@@ -205,7 +208,7 @@ header {
 			}
 		}
 		.menu {
-			bottom: 70px;
+			bottom: 60px;
 			top: auto;
 			& > ul {
 				display: flex;

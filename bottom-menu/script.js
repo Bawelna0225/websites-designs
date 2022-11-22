@@ -1,8 +1,7 @@
 const openMenuButtons = [...document.querySelectorAll('.open-menu')]
 
-openMenuButtons.forEach((btn) => {
-	btn.addEventListener('click', (e) => {
-		btn.classList.toggle('active')
+openMenuButtons.forEach((btn) => { 
+  btn.addEventListener('click', (e) => {
 		document.querySelector('.menu').classList.add('active')
 		document.querySelector('.menu .lists').style.translate = `-${btn.getAttribute('data-menu-num') * 25}% 0%`
 	})
