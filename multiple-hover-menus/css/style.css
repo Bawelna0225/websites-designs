@@ -132,11 +132,12 @@ header .other-links ul li a {
 }
 .nav > ul > li .dropdown-menu {
   position: fixed;
-  transition: 150ms linear;
+  transition: 250ms linear;
   opacity: 0;
+  bottom: auto;
   top: 50px;
   border-radius: 6px;
-  max-width: min(100% - 2rem, 400px);
+  width: min(100% - 2rem, 400px);
   pointer-events: none;
 }
 .nav > ul > li .dropdown-menu ul {
@@ -152,6 +153,7 @@ header .other-links ul li a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: -1;
 }
 .nav > ul > li .dropdown-menu ul li {
   text-align: left;
@@ -170,8 +172,10 @@ header .other-links ul li a {
   color: var(--text-color);
 }
 .nav > ul > li:hover .dropdown-menu {
+  transition: 250ms linear;
   opacity: 1;
   top: 60px;
+  bottom: auto;
   pointer-events: all;
 }
 .nav > ul > li:hover a::before {
@@ -205,5 +209,17 @@ header .other-links ul li a {
   }
   .nav > ul li {
     font-size: 0.75rem;
+  }
+  .nav > ul li a::before {
+    display: none;
+  }
+  .nav > ul li .dropdown-menu {
+    right: 1rem;
+    top: auto;
+  }
+  .nav > ul li:hover .dropdown-menu {
+    right: 1rem;
+    top: auto;
+    bottom: 65px;
   }
 }/*# sourceMappingURL=style.css.map */
