@@ -133,6 +133,18 @@ header .other-links ul li a {
   opacity: 0.6;
   transition: 150ms linear;
 }
+.nav > ul > li .open-menu.active {
+  opacity: 1;
+}
+.nav > ul > li .open-menu.active::before {
+  top: 12px;
+  opacity: 1;
+}
+.nav > ul > li .open-menu.active ~ .dropdown-menu {
+  opacity: 1;
+  top: 90px;
+  pointer-events: all;
+}
 .nav > ul > li .dropdown-menu {
   position: fixed;
   transition: 250ms linear;

@@ -129,6 +129,18 @@ header {
 					transition: 150ms linear;
 				}
 			}
+			.open-menu.active {
+				opacity: 1;
+				&::before {
+					top: 12px;
+					opacity: 1;
+				}
+				& ~ .dropdown-menu {
+					opacity: 1;
+					top: 90px;
+					pointer-events: all;
+				}
+			}
 			.dropdown-menu {
 				position: fixed;
 				transition: 250ms linear;
