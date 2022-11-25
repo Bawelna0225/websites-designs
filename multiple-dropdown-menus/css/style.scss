@@ -127,7 +127,7 @@ header {
 					opacity: 1;
 				}
 				& ~ .dropdown-menu {
-                    pointer-events: all;
+					pointer-events: all;
 					opacity: 1;
 					top: 90px;
 					pointer-events: all;
@@ -143,8 +143,8 @@ header {
 				max-height: min(calc(100vh - 130px), 500px);
 				width: min(calc(100% - 2rem), 400px);
 				pointer-events: none;
-                overflow: auto;
-                box-shadow: 0px 0px 10px var(--shadow-color);
+				overflow: auto;
+				box-shadow: 0px 0px 10px var(--shadow-color);
 				ul {
 					list-style-type: none;
 					position: relative;
@@ -181,9 +181,9 @@ header {
 @media (max-width: 1024px) {
 	header {
 		padding-inline: 10px;
-        height: 55px;
-        font-size: 0.8rem;
-       box-shadow: 0px 0px 10px var(--shadow-color);
+		height: 55px;
+		font-size: 0.8rem;
+		box-shadow: 0px 0px 10px var(--shadow-color);
 		.other-links {
 			gap: 8px;
 			ul {
@@ -208,7 +208,7 @@ header {
 				& > .open-menu {
 					border-radius: 8px;
 					padding: 5px;
-                    transition: 300ms linear;
+					transition: 300ms linear;
 					&::before {
 						display: none;
 					}
@@ -219,13 +219,12 @@ header {
 					right: 1rem;
 					top: auto;
 					bottom: 15px;
-                    pointer-events: none;
-                    z-index: -1;
-
+					pointer-events: none;
+					z-index: -1;
 				}
 				.open-menu.active {
 					background-color: rgb(38, 145, 227);
-                    top: -12px;
+					top: -12px;
 					color: white;
 					& ~ .dropdown-menu {
 						bottom: 70px;
