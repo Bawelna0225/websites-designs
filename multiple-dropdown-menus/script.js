@@ -23,6 +23,7 @@ window.addEventListener('click', function (e) {
 })
 
 // =================== Dark Mode ======================== //
+
 let darkMode = localStorage.getItem('darkMode')
 
 const enableDarkMode = () => {
