@@ -119,4 +119,22 @@ body {
   pointer-events: visible;
   transition: 0.4s;
   transition-delay: 0.2s;
+}
+
+@media (max-height: 800px) {
+  .sidebar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidebar .logo h3 {
+    font-size: 1.8rem;
+  }
+  .sidebar nav hr {
+    margin: 10px 0px;
+  }
+  .sidebar nav .nav-title {
+    padding: 0;
+    margin: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -119,3 +119,24 @@ body {
 		}
 	}
 }
+@media (max-height: 800px) {
+	.sidebar {
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			h3 {
+				font-size: 1.8rem;
+			}
+		}
+		nav {
+			hr {
+				margin: 10px 0px;
+			}
+			.nav-title {
+				padding: 0;
+				margin: 0;
+			}
+		}
+	}
+}

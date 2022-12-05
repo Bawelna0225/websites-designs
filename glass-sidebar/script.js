@@ -2,13 +2,17 @@ const toggleButton = document.querySelector('.toggle'),
 	sidebar = document.querySelector('.sidebar'),
 	navItems = document.querySelectorAll('.nav-item')
 
-toggleButton.addEventListener('click', () => {
-	sidebar.classList.toggle('open')
+function changeToggleIcon() {
 	if (sidebar.classList.contains('open')) {
 		toggleButton.querySelector('span').textContent = 'chevron_left'
 	} else {
 		toggleButton.querySelector('span').textContent = 'chevron_right'
 	}
+}
+
+toggleButton.addEventListener('click', () => {
+	sidebar.classList.toggle('open')
+	changeToggleIcon()
 })
 
 navItems.forEach((navItem) => {
@@ -22,9 +26,14 @@ let touchstartX = 0
 let touchendX = 0
 
 function checkDirection() {
-	if (touchendX < touchstartX && sidebar.classList.contains('open')) sidebar.classList.remove('open')
-
-	if (touchendX > touchstartX && !sidebar.classList.contains('open')) sidebar.classList.add('open')
+	if (touchendX < touchstartX && sidebar.classList.contains('open') && touchendX - touchstartX < -30) {
+		sidebar.classList.remove('open')
+        changeToggleIcon()
+	}
+	if (touchendX > touchstartX && !sidebar.classList.contains('open') && touchendX - touchstartX > 30) {
+		sidebar.classList.add('open')
+        changeToggleIcon()
+	}
 }
 
 sidebar.addEventListener('touchstart', (e) => {
