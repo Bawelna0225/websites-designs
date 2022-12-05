@@ -42,4 +42,13 @@ body {
   pointer-events: none;
   scale: 0;
   opacity: 0;
+}
+.sidebar .nav-title {
+  color: #dadada;
+  margin: 40px 0 18px;
+  pointer-events: none;
+  opacity: 0;
+}
+.sidebar nav {
+  padding: 0 20px;
 }/*# sourceMappingURL=style.css.map */

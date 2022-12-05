@@ -40,5 +40,15 @@ body {
 			opacity: 0;
 		}
 	}
+	.nav-title {
+		color: #dadada;
+		margin: 40px 0 18px;
+		pointer-events: none;
+		opacity: 0;
+	}
+	nav {
+		padding: 0 20px;
+
+	}
 
 }
