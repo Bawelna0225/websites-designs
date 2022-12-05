@@ -83,4 +83,25 @@ body {
   border-radius: 3px;
   border-top: 2px solid rgba(255, 255, 255, 0.1);
   margin: 40px 0 50px;
+}
+.sidebar.open {
+  width: 340px;
+  max-width: 100%;
+}
+.sidebar.open .logo h3 {
+  scale: 1;
+  opacity: 1;
+  transition: 0.4s;
+  transition-delay: 0.2s;
+}
+.sidebar.open .nav-title {
+  opacity: 1;
+  transition: 0.4s;
+  transition-delay: 0.2s;
+}
+.sidebar.open .nav-item .text {
+  opacity: 1;
+  pointer-events: visible;
+  transition: 0.4s;
+  transition-delay: 0.2s;
 }/*# sourceMappingURL=style.css.map */

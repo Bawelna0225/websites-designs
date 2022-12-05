@@ -82,4 +82,26 @@ body {
 		}
 	}
 
+
+	&.open {
+		width: 340px;
+		max-width: 100%;
+		.logo h3 {
+			scale: 1;
+			opacity: 1;
+			transition: 0.4s;
+			transition-delay: 0.2s;
+		}
+		.nav-title {
+			opacity: 1;
+			transition: 0.4s;
+			transition-delay: 0.2s;
+		}
+		.nav-item .text {
+			opacity: 1;
+			pointer-events: visible;
+			transition: 0.4s;
+			transition-delay: 0.2s;
+		}
+	}
 }
