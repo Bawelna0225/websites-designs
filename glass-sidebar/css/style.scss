@@ -23,6 +23,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	overflow-y: auto;
+	overflow-x: hidden;
 	.logo {
 		width: 100%;
 		height: 100px;
@@ -80,21 +82,23 @@ body {
 			border-top: 2px solid rgba(255, 255, 255, 0.1);
 			margin: 40px 0 50px;
 		}
-	}
-
-	.toggle {
-		cursor: pointer;
-		position: absolute;
-		color: #fff;
-		top: 20%;
-		right: -15px;
-		line-height: 50%;
-		text-align: center;
-		border-radius: 50%;
-		padding: 2px 0 2px 2px;
-		background: linear-gradient(90deg, transparent 50%, rgba(10, 10, 10, 0.65) 50%);
-		span {
-			font-size: 28px;
+		.toggle {
+			cursor: pointer;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 56px;
+			background: #139dbc;
+			border-radius: 3px;
+			padding: 20px;
+			transition: 0.3s;
+			&:hover {
+				background-color: #0e7187;
+			}
+			span {
+				font-size: 28px;
+			}
 		}
 	}
 	&.open {
@@ -119,8 +123,10 @@ body {
 		}
 	}
 }
-@media (max-height: 800px) {
+@media (max-width: 792px) {
 	.sidebar {
+		padding-bottom: 20px;
+		justify-content: start;
 		.logo {
 			display: flex;
 			justify-content: center;
@@ -136,6 +142,9 @@ body {
 			.nav-title {
 				padding: 0;
 				margin: 0;
+			}
+			.toggle {
+				padding: 20px;
 			}
 		}
 	}
